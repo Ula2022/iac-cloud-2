@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: A sample template
 Metadata:
-  Version: 1.0.1
+  Version: 1.0.2
 Parameters:
   Instancename:
     Description: Name of an EC2 instance(s)
@@ -47,7 +47,7 @@ Resources:
     Properties:
       BucketName: !Ref Bucketname
       VersioningConfiguration:  
-        Status: Enabled
+        Status: disabled
 
   MyEc2IAMrole:
     Type: 'AWS::IAM::Role'
